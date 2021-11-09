@@ -1,9 +1,13 @@
 import React from 'react';
 
+const closeHandler = () => {
+    window.location.reload();
+};
+
 const Popup = (props) => {
     return (
         <div id="container">
-            <div id="pop-up">
+            <div className="pop-up">
                 <h2>Your note:</h2>
                 <div id="inputs-popup">
       <p>Firstname: {props.first}</p>
@@ -12,8 +16,8 @@ const Popup = (props) => {
       <p>Role: {props.role}</p>
       <p>Message: {props.message}</p></div>
             <div className="buttons">
-            <button>Yes, I'm sure</button>
-            <button>Nope, don't want to post it</button>
+            <button onClick={closeHandler}>Yes, I'm sure</button>
+            <button className="secondary" onClick={closeHandler}>Nope, don't want to post it</button>
             </div>
             </div>
         </div>

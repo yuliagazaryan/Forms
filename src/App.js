@@ -10,6 +10,7 @@ class App extends Component {
     phonenumber: "",
     message: "",
     role: "",
+    showPopup: false,
   };
 
   inputHandler = (e) => {
@@ -18,23 +19,29 @@ class App extends Component {
     });
   };
 
-  popupHandler = (e) => {
+  popupHandler = (event) => {
+    event.preventDefault();
     this.setState({ showPopup: true
     });
   };
 
+
   render() {
+    const props = {
+      first: this.state.firstname,
+            last: this.state.lastname,
+            phone: this.state.phonenumber,
+            role: this.state.role,
+            message: this.state.message,
+    };
+
     return (
       <div>
-        <Form change={this.inputHandler} />
-        <View
-          first={this.state.firstname}
-          last={this.state.lastname}
-          phone={this.state.phonenumber}
-          role={this.state.role}
-          message={this.state.message}
+        <Form change={this.inputHandler} submit={this.popupHandler}/>
+        <View {...props}        
         />
-        <Popup change={this.popupHandler}/>
+        {this.state.showPopup && <Popup {...props} />}
+        
       </div>
     );
   }
