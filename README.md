@@ -1,3 +1,11 @@
 <p>
-    <img src="src/screenshots/photo3.png" width="220" height="240" />
+    <img src="src/screenshots/photo3.png"  />
+</p>
+
+<p>
+    <img src="src/screenshots/photo4.png"  />
+</p>
+
+<p>
+    <img src="src/screenshots/photo5.png"  />
 </p>
