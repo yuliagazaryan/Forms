@@ -3,9 +3,10 @@ import React from 'react';
 const form = (props) => {
     return (
     <form>
+        <div className="inputs">
         <div>
             <label htmlFor="firstname">First name</label>
-            <input
+            <input 
                 type="text"
                 name="firstname"
                 id="firstname"
@@ -42,13 +43,15 @@ const form = (props) => {
                     <option value="other">Other</option>
                 </select>
         </div>
-        <div>
+        <div id="message">
             <label htmlFor="message">Message</label>
             <textarea
                 name="message"
                 id="message"
                 required
                 onChange={props.change}></textarea>
+        </div>
+        <button>Send</button>
         </div>
     </form>
     );

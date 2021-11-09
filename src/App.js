@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Form from './components/Form';
 import View from './components/View';
+import Popup from './components/Popup';
 
 class App extends Component {
   state = {
@@ -17,6 +18,11 @@ class App extends Component {
     });
   };
 
+  popupHandler = (e) => {
+    this.setState({ showPopup: true
+    });
+  };
+
   render() {
     return (
       <div>
@@ -28,6 +34,7 @@ class App extends Component {
           role={this.state.role}
           message={this.state.message}
         />
+        <Popup change={this.popupHandler}/>
       </div>
     );
   }

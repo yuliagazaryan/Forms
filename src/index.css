@@ -1,13 +1,144 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* FORM CSS */
+
+form {
+  background-color: rgb(34, 34, 90);
+  color: white;
+  padding: 50px;
+}
+
+form label {
+  padding: 25px;
+}
+
+form input,
+textarea,
+select {
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+  width: 200px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+form .inputs div:first-child input {
+  margin-left: 30px;
+}
+
+form .inputs div:nth-child(2) input {
+  margin-left: 30px;
+}
+form .inputs #message {
+  display: flex;
+}
+
+form .inputs select {
+  margin-left: 75px;
+}
+
+form .inputs textarea {
+  margin-left: 42px;
+}
+
+form button {
+  background-color: green;
+  color: white;
+  width: 200px;
+  margin: 0 0 0 158px;
+}
+
+form button:hover {
+  background-color: rgb(33, 80, 33);
+}
+
+/* VIEW CSS */
+
+#view {
+  margin: 50px;
+}
+
+.list {
+  color: #555;
+  font-size: 22px;
+  padding: 0 !important;
+  width: 500px;
+  font-family: courier, monospace;
+  border: 1px solid #dedede;
+  margin: 0;
+}
+
+.list li {
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  height: 232px;
+  margin-left: 40px;
+}
+​
+/* POP UP CSS */
+
+#container {
+  position: fixed;
+  z-index: 9999;
+  background: rgba(31, 14, 7, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pop-up {
+  background-color: white;
+  width: 800px;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+button:first-child {
+  background-color: rgb(91, 121, 31);
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+button {
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  margin-right: 30px;
+}
+
+#inputs-popup {
+  margin-bottom: 45px;
+}
+
+h2 {
+  margin: 0;
+  padding-bottom: 20px;
 }
