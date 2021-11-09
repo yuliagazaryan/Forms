@@ -36,7 +36,7 @@ class App extends Component {
     };
 
     return (
-      <div>
+      <div className="main">
         <Form change={this.inputHandler} submit={this.popupHandler}/>
         <View {...props}        
         />

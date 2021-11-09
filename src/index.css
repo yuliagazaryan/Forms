@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.main {
+  display: flex;
+}
+
 #container {
   position: fixed;
   z-index: 9999;
@@ -57,9 +61,10 @@ h2 {
 /* FORM CSS */
 
 form {
-  background-color: rgb(34, 34, 90);
+  background-image: linear-gradient(rgb(27, 27, 95), white);
   color: white;
   padding: 50px;
+  height: 100%;
 }
 
 form label {
@@ -97,7 +102,7 @@ form .inputs textarea {
 }
 
 form button {
-  background-color: green;
+  background-color: #2b2b6b;
   color: white;
   width: 200px;
   margin: 0 0 0 158px;
