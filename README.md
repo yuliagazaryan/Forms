@@ -1,15 +1,11 @@
 <p>
-    <img src="src/screenshots/photo3.png"  />
+    <img src="src/screenshots/photo7.png"  />
 </p>
 
 <p>
-    <img src="src/screenshots/photo4.png"  />
+    <img src="src/screenshots/photo8.png"  />
 </p>
 
 <p>
-    <img src="src/screenshots/photo5.png"  />
-</p>
-
-<p>
-    <img src="src/screenshots/photo6.png"  />
+    <img src="src/screenshots/photo9.png"  />
 </p>
